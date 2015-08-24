@@ -2,6 +2,8 @@ angular.module('brushfire').controller('videosPageController', [
   '$scope', '$http',
   function($scope, $http) {
 
+    $scope.me = window.SAILS_LOCALS.me;
+
     /////////////////////////////////////////////////////////////////////////////
     // Immediately start fetching list of videos from the server.
     /////////////////////////////////////////////////////////////////////////////
