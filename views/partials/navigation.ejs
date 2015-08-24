@@ -18,7 +18,7 @@
       <!-- The sign-in Form (unauthenticated user state) -->
       <form ng-hide="me.id" ng-submit="submitLoginForm()" class="navbar-form navbar-right">
         <div class="form-group">
-          <input ng-model="loginForm.email" type="text" placeholder="Email" name="email" class="form-control">
+          <input ng-model="loginForm.login" type="text" placeholder="email or username" name="login" class="form-control">
         </div>
         <div class="form-group">
           <input ng-model="loginForm.password" type="password" placeholder="Password" name="password" class="form-control">
