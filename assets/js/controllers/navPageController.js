@@ -5,6 +5,11 @@ angular.module('brushfire').controller('navPageController', ['$location', '$scop
 
   $scope.me = window.SAILS_LOCALS.me;
   
+  $scope.submitLoginForm = function() {
+
+    // Set the loading state (i.e. show loading spinner)
+    $scope.loginForm.loading = true;
+  
   // Submit request to Sails.
     $http.put('/login', {
         email: $scope.loginForm.login,
