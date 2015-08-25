@@ -13,7 +13,7 @@
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
         <li><a href="/videos">Cat Videos</a></li>
-        <li><a href="/administration">User Administration</a></li>
+        <li><a ng-show="me.admin" href="/administration">User Administration</a></li>
       </ul>
       <!-- The sign-in Form (unauthenticated user state) -->
       <form ng-hide="me.id" ng-submit="submitLoginForm()" class="navbar-form navbar-right">
