@@ -11,14 +11,14 @@ angular.module('brushfire').controller('editProfilePageController', ['$location'
 
   // Set up initial objects
   // (kind of like our schema for the page)
-  // $scope.editProfile = {
-  //   properties: {},
-  //   errorMsg: '',
-  //   error: false,
-  //   saving: false,
-  //   loading: false,
-  //   changePassword: {}
-  // };
+  $scope.editProfile = {
+    properties: {},
+    errorMsg: '',
+    error: false,
+    saving: false,
+    loading: false,
+    changePassword: {}
+  };
 
   // $scope.editProfile.loading = true;
 
