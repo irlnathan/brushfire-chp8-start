@@ -24,7 +24,16 @@ angular.module('brushfire').controller('navPageController', ['$location', '$scop
       })
       .catch(function onError(sailsResponse) {
 
-        // Handle known error type(s).
+        // Handle known error type(s).        
+        // Deleted account
+        if (sailsResponse.status == 403) {
+          toastr.error(sailsResponse.data, 'Error', {
+          closeButton: true
+        });
+          return;
+        }
+
+
         // Invalid username / password combination.
         if (sailsResponse.status === 400 || 404) {
           // $scope.loginForm.topLevelErrorMessage = 'Invalid email/password combination.';
